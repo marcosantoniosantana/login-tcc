@@ -1,0 +1,128 @@
+/*
+ Retira a margem do site
+*/
+
+*{
+	margin: 0;
+}
+
+body{
+}
+
+/*
+ Montagem do logo Usando somente css
+*/
+
+.logo{
+	text-align: center;
+	transform: skew(-10deg) rotate(-5deg);
+	width: 500px;
+	margin: 1% auto 0;
+}
+
+.titulo-logo{
+	font-size: 100px;
+	color: #e5e32b;
+	font-family: 'Merriweather Sans', sans-serif;
+	font-weight: 700;
+	text-shadow: -10px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.titulo-logo::selection{
+	background: #cacaca;
+	color: #000000;
+}
+
+/*
+ Montagem da área de login
+*/
+
+.geral{
+	margin: 3% auto 0;
+	position: relative;
+	width: 400px;
+	height: 300px;
+	background: #7e81b0;
+	border-radius: 10px;
+	box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.5);
+	overflow: hidden;
+}
+
+
+.titulo{
+	text-align: center;
+	font-size: 50px;
+	font-family: 'Merriweather Sans', sans-serif;
+}
+
+
+.area-login{
+	margin: 5%;
+}
+
+
+input[type="email"],
+input[type="password"],
+button,
+a{
+	width: 350px;
+	margin: 5px;
+	height: 25px;
+	border-style: none;
+	text-decoration: none;
+}
+
+input[type="email"],
+input[type="password"]{
+	background: #cacaca;
+	border-radius: 4px;
+}
+
+input[type="email"],
+input[type="password"]:focus{
+	outline: 0;
+}
+
+button{
+	border-radius: 4px;
+	background: #0b0c42;
+	box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
+	transition: 1s;
+}
+
+button:hover{
+	background: #545467;
+}
+
+.tEntrar,
+#esqueceu_senha{
+	color: #f4ec1e;
+}
+
+.tEntrar{
+	font-family: Gill Sans, sans-serif;
+	font-weight: 600;
+	font-size: 15px;
+}
+
+#enviarInfs{
+	margin-top: 30px;
+}
+
+#cadastrar,
+#enviarInfs{
+	cursor: pointer;
+}
+
+
+
+.btCadastrar{
+	width: 350px;
+	height: 25px;
+	margin: 0% auto 0;
+}
+
+#infsErradas{
+	font-size: 18px;
+	font-weight: 1000;
+}
