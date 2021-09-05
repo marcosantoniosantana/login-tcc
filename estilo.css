@@ -128,6 +128,11 @@ button:hover{
 	margin-left: 5px;
 }
 
+
+/*
+Parte responsável por deixar a tela responsiva.
+OBS: Por enquanto apenas para celular.
+*/
 @media screen and (max-width: 360px){
 	body{
 		background: #000000;
@@ -154,4 +159,15 @@ button:hover{
 	.area-login{
 		margin: 4px;
 	}
+
+	input[type="email"],
+	input[type="password"],
+	button{
+		width: 330px;
+	}
+
+	button:active{
+		background: #7ea4b0;
+	}
+
 }
