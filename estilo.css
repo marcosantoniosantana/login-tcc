@@ -123,6 +123,35 @@ button:hover{
 }
 
 #infsErradas{
-	font-size: 18px;
-	font-weight: 1000;
+	font-size: 17px;
+	font-weight: 500;
+	margin-left: 5px;
+}
+
+@media screen and (max-width: 360px){
+	body{
+		background: #000000;
+	}
+
+	.geral{
+		width: 350px;
+		height: 290px;
+		margin: 10% auto 0;
+	}
+
+	.logo{
+		text-align: center;
+		width: 100px;
+		margin: 2% auto 0;
+		position: relative;
+	}
+
+	.titulo-logo{
+		top: 100px;
+		font-size: 50px;
+	}
+
+	.area-login{
+		margin: 4px;
+	}
 }
