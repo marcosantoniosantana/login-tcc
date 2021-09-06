@@ -142,11 +142,12 @@ OBS: Por enquanto apenas para celular.
 		width: 350px;
 		height: 290px;
 		margin: 10% auto 0;
+		position: relative;
 	}
 
 	.logo{
-		text-align: center;
-		width: 100px;
+		width: 200px;
+		height: 50px;
 		margin: 2% auto 0;
 		position: relative;
 	}
