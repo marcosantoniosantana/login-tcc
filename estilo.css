@@ -7,6 +7,10 @@
 }
 
 body{
+	background-image: url('fundo.png');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
 }
 
 /*
@@ -135,7 +139,10 @@ OBS: Por enquanto apenas para celular.
 */
 @media screen and (max-width: 360px){
 	body{
-		background: #000000;
+	background-image: url('fundo.png');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
 	}
 
 	.geral{
@@ -165,6 +172,7 @@ OBS: Por enquanto apenas para celular.
 	input[type="password"],
 	button{
 		width: 330px;
+		transition: 0.5;
 	}
 
 	button:active{
