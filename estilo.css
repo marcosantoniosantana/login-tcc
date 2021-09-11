@@ -67,6 +67,7 @@ body{
 
 input[type="email"],
 input[type="password"],
+input[type="text"],
 button,
 a{
 	width: 350px;
@@ -77,13 +78,17 @@ a{
 }
 
 input[type="email"],
-input[type="password"]{
+input[type="password"],
+input[type="text"]{
 	background: #cacaca;
 	border-radius: 4px;
+	caret-color: #0b0c42;
+	border-style: none;
 }
 
 input[type="email"],
-input[type="password"]:focus{
+input[type="password"],
+input[type="text"]:focus{
 	outline: 0;
 }
 
@@ -132,6 +137,16 @@ button:hover{
 	margin-left: 5px;
 }
 
+.revela-senha{
+	width: 30px;
+	height: 25px;
+	margin: -31px 5px 0 81%;
+	background: #cacaca;
+	cursor: pointer;
+	position: absolute;
+	border-radius: 4px;
+}
+
 
 /*
 Parte responsável por deixar a tela responsiva.
@@ -148,8 +163,10 @@ OBS: Por enquanto apenas para celular.
 	.geral{
 		width: 350px;
 		height: 290px;
-		margin: 10% auto 0;
-		position: relative;
+		top: 45%;
+		left: 50%;
+		transform: translate(-50%,-55%);
+		position: absolute;
 	}
 
 	.logo{
@@ -170,6 +187,7 @@ OBS: Por enquanto apenas para celular.
 
 	input[type="email"],
 	input[type="password"],
+	input[type="text"],
 	button{
 		width: 330px;
 		transition: 0.5;
@@ -177,6 +195,10 @@ OBS: Por enquanto apenas para celular.
 
 	button:active{
 		background: #7ea4b0;
+	}
+
+	.revela-senha{
+		margin: -30px 5px 0 87%;
 	}
 
 }
