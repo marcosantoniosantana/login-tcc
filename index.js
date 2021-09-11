@@ -6,6 +6,19 @@ var inputBotao = document.getElementById("fazerLogin");
 var btCadastrar = document.getElementById('cadastrar');
 var linkCadastro = document.getElementById('pgCadastro');
 
+var verSenha = document.getElementById('mostrar-senha');
+
+verSenha.onclick = ()=>{
+
+	if (senha.type == "password") {
+		senha.type = "text";
+		verSenha.style.fill = "#7e81b0";
+	} else if (senha.type == "text") {
+		senha.type = "password";
+		verSenha.style.fill = "#000000";
+	}
+}
+
 
 /*
 	email.addEventListener('focus', ()=>{
